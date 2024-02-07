@@ -1,0 +1,16 @@
+using System;
+
+namespace String
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string a = "안녕하세요?"; // 문자열은 큰따옴표로 표시한다.
+            string b = "김격진입니다.";
+
+            Console.WriteLine(a);
+            Console.WriteLine(b);
+        }
+    }
+}
