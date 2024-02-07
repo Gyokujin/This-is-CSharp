@@ -1,0 +1,13 @@
+using static System.Console;
+
+namespace Test1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            WriteLine("여러분, 안녕하세요?"); // System.Console을 선언하여 Console을 생략한다.
+            WriteLine("반갑습니다!");
+        }
+    }
+}
