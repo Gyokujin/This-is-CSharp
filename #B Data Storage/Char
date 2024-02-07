@@ -6,7 +6,7 @@ namespace Char
     {
         static void Main(string[] args)
         {
-            char a = '안';
+            char a = '안'; // 문자는 작은따옴표로 표시한다.
             char b = '녕';
             char c = '하';
             char d = '세';
