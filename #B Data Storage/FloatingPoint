@@ -9,7 +9,7 @@ namespace FloatingPoint
             float a = 3.1415_9265_3589_7392_3846f; // float은 7개의 자릿수까지 다룰 수 있다.
             Console.WriteLine(a);
 
-            double b = 3.1415_9265_3589_7392_3846f; // double은 15~16개의 자릿수까지 다룰 수 있다. 
+            double b = 3.1415_9265_3589_7392_3846; // double은 15~16개의 자릿수까지 다룰 수 있다. 
             Console.WriteLine(b);
         }
     }
