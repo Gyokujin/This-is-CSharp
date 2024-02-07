@@ -1,0 +1,22 @@
+using System;
+
+namespace Overflow
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            uint a = uint.MaxValue; // uint의 최대값은 4294967295
+
+            Console.WriteLine(a);
+
+            a = a + 1;
+
+            Console.WriteLine(a); // uint의 최대값을 넘었기 때문에 다시 0으로 초기화된다.
+
+            a = a + 1;
+
+            Console.WriteLine(a);
+        }
+    }
+}
