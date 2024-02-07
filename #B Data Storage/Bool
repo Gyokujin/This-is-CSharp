@@ -1,0 +1,16 @@
+using System;
+
+namespace Bool
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            bool a = true; // 논리 형식은 참(true)과 거짓(false)으로만 표현한다.
+            bool b = false;
+
+            Console.WriteLine(a);
+            Console.WriteLine(b);
+        }
+    }
+}
