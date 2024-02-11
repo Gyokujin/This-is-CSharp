@@ -1,0 +1,31 @@
+using System;
+
+namespace Test2
+{
+    internal class Program
+    {
+        // 다음 코드에서 잘못된 부분을 찾고, 그 이유를 설명하세요.
+
+        static void Main(string[] args)
+        {
+            // int a = 7.3; // int는 소수점이 없는 수만 담을수 있다. int가 아닌 float을 사용해야 한다.
+            float a = 7.3f;
+            Console.WriteLine(a);
+
+            // float b = 3.14; // 소수점이 있는 float 자료형의 변수를 선언하려면 값에 f를 붙여야한다.
+            float b = 3.14f;
+            Console.WriteLine(b);
+
+            double c = a * b;
+            Console.WriteLine(c);
+
+            // char d = "abc"; // char은 1개의 문자만 담을수 있다. 2개 이상은 string을 사용한다.
+            string d = "abc";
+            Console.WriteLine(d);
+
+            // string e = '한'; // 한 글자의 '' 안에 문자를 담으려면 char을 사용한다.
+            char e = '한';
+            Console.WriteLine(e);
+        }
+    }
+}
