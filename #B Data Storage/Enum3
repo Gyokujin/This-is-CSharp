@@ -1,0 +1,18 @@
+using System;
+
+namespace Enum3
+{
+    internal class Program
+    {
+        enum DialogResult { YES = 10, NO, CANCEL, CONFIRM = 50, OK } // 요소를 선언과 동시에 특정값을 할당하는 것 또한 가능하다.
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine((int)DialogResult.YES);
+            Console.WriteLine((int)DialogResult.NO);
+            Console.WriteLine((int)DialogResult.CANCEL);
+            Console.WriteLine((int)DialogResult.CONFIRM);
+            Console.WriteLine((int)DialogResult.OK);
+        }
+    }
+}
