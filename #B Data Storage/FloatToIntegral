@@ -1,0 +1,18 @@
+using System;
+
+namespace FloatToIntegral
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            float a = 0.9f;
+            int b = (int)a; // 소수를 정수형으로 변환하면 소수점 아래는 전부 지워진다.
+            Console.WriteLine(b);
+
+            float c = 1.1f;
+            int d = (int)c;
+            Console.WriteLine(d);
+        }
+    }
+}
