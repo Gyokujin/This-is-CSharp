@@ -1,0 +1,45 @@
+using System;
+using System.Globalization;
+using static System.Console;
+
+namespace StringFormatDatetime
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            DateTime dt = new DateTime(2023, 03, 04, 23, 18, 22);
+
+            // 12 시간 형식: 2023-03-04 오후 11:18:22 (토)
+            Console.WriteLine("12시간 형식: {0:yyyy-MM-dd tt hh:mm:ss (ddd)}", dt);
+
+            // 24시간 형식: 2023-03-04 23:18:22 (토요일)
+            Console.WriteLine("24시간 형식: {0:yyyy-MM-dd HH:mm:ss (dddd)}", dt);
+
+            CultureInfo ciKo = new CultureInfo("ko-KR");
+
+            // 2023-03-04 오후 11:18:22 (토)
+            Console.WriteLine(dt.ToString("yyyy-MM-dd tt hh:mm:ss (ddd)", ciKo));
+
+            CultureInfo ciEn = new CultureInfo("en-US");
+
+            // 2023-03-04 PM 11:18:22 (sat)
+            Console.WriteLine(dt.ToString("yyyy-MM-dd tt hh:mm:ss (ddd)", ciEn));
+
+            DateTime dt2 = new DateTime(2023, 03, 04, 23, 18, 22);
+
+            WriteLine("12시간 형식: {0:yyyy-MM-dd tt hh:mm:ss (ddd)}", dt2);
+            WriteLine("24시간 형식: {0:yyyy-MM-dd HH:mm:ss (dddd)}", dt2);
+
+            WriteLine();
+            WriteLine(dt2.ToString("yyyy-MM-dd tt hh:mm:ss (ddd)", ciKo));
+            WriteLine(dt2.ToString("yyyy-MM-dd HH:mm:ss (dddd)", ciKo));
+            WriteLine(dt2.ToString(ciKo));
+
+            WriteLine();
+            WriteLine(dt2.ToString("yyyy-MM-dd tt hh:mm:ss (ddd)", ciEn));
+            WriteLine(dt2.ToString("yyyy-MM-dd HH:mm:ss (dddd)", ciEn));
+            WriteLine(dt2.ToString(ciEn));
+        }
+    }
+}
