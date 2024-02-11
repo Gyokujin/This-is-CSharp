@@ -1,0 +1,42 @@
+using System;
+using System.Diagnostics;
+
+namespace Nullable
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int? a = null;
+            Console.WriteLine(a);
+            
+            a = 5;
+            Console.WriteLine(a);
+
+            float? b = null;
+            Console.WriteLine(b);
+
+            double? c = null;
+            Console.WriteLine(c);
+
+            int? d = null;
+            Console.WriteLine(d.HasValue); // d는 null이므로 False 출력
+            // Console.WriteLine(d.Value);
+
+            d = 37;
+            Console.WriteLine(d.HasValue); // d는 37을 갖고 있으므로 True 출력
+            Console.WriteLine(d.Value); // 37을 출력
+
+            int? e = null;
+
+            Console.WriteLine(e.HasValue);
+            Console.WriteLine(e != null);
+
+            e = 3;
+
+            Console.WriteLine(e.HasValue);
+            Console.WriteLine(e != null);
+            Console.WriteLine(e.Value);
+        }
+    }
+}
