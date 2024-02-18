@@ -1,0 +1,17 @@
+using System;
+
+namespace IncDecOperator
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = 10;
+            Console.WriteLine(a++); // 10. 후위 증가 연산자. 코드 실행후 연산이 된다.
+            Console.WriteLine(++a); // 12. 전위 증가 연산자. 연산 이후 코드가 실행된다.
+
+            Console.WriteLine(a--); // 12. 후위 감소 연산자
+            Console.WriteLine(--a); // 10. 전위 감소 연산자
+        }
+    }
+}
