@@ -1,0 +1,16 @@
+using System;
+
+namespace Test3
+{
+    internal class Program
+    {
+        // 다음 코드에서 b는 어떤 값을 가질까요?
+
+        static void Main(string[] args)
+        {
+            int a = 10;
+            string b = a == 0 ? "가나다" : "ABC"; // a == 0 이라는 조건이 거짓이기 때문에 ABC가 반환된다.
+            Console.WriteLine(b); // ABC
+        }
+    }
+}
