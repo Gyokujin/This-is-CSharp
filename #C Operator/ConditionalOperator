@@ -1,0 +1,13 @@
+using System;
+
+namespace ConditionalOperator
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string result = (10 % 2) == 0 ? "짝수" : "홀수"; // 조건(삼항) 연산자 : 첫 번째 매개변수는 조건식이며 해당 조건이 참이면 두 번째 매개변수를 거짓이면 세 번쨰 매개변수를 반환한다.
+            Console.WriteLine(result); // 조건이 참이기 때문에 첫 번째 값이 반환된다.
+        }
+    }
+}
