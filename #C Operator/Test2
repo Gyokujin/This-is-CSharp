@@ -1,0 +1,16 @@
+using System;
+
+namespace Test2
+{
+    internal class Program
+    {
+        // 다음 코드에서 a는 얼마일까요?
+        // int a = 0xF0 | 0x0F
+
+        static void Main(string[] args)
+        {
+            int a = 0xF0 | 0x0F; // 0xF0 : 240, 0x0F : 15
+            Console.WriteLine(a); // 1111 1111 = 255
+        }
+    }
+}
