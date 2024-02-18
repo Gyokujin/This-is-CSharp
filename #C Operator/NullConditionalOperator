@@ -1,0 +1,26 @@
+using System.Collections;
+using static System.Console;
+
+namespace NullConditionalOperator
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            // null 조건부 연산자 : 해당 객체가 null이면 null을 아니면, 뒤에 지정한 멤버를 반환한다.
+            ArrayList a = null;
+            a?.Add("야구"); // a?.가 null을 반환하므로 Add() 메소드는 호출되지 않음
+            a?.Add("축구");
+            WriteLine($"Count : {a?.Count}");
+            WriteLine($"{a?[0]}");
+            WriteLine($"{a?[1]}");
+
+            a = new ArrayList(); // a는 이제 더 이상 null이 아니다.
+            a?.Add("야구");
+            a?.Add("축구");
+            WriteLine($"Count : {a?.Count}");
+            WriteLine($"{a?[0]}");
+            WriteLine($"{a?[1]}");
+        }
+    }
+}
