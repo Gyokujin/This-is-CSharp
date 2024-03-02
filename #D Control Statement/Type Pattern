@@ -1,0 +1,16 @@
+using System;
+
+namespace Type_Pattern
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            object foo = 23;
+            if (foo is int)
+            {
+                Console.WriteLine(foo);
+            }
+        }
+    }
+}
