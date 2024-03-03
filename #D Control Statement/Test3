@@ -1,0 +1,32 @@
+namespace Test3
+{
+    internal class Program
+    {
+        // 1번과 2번을 for 문 대신 while 문과 do 문으로 바꿔서 각각 작성하세요.
+
+        static void Main(string[] args)
+        {
+            int count = 0;
+            string message = string.Empty;
+
+            while (count < 5)
+            {
+                message += "*";
+                Console.WriteLine(message);
+                count++;
+            }
+
+            do
+            {
+                for (int i = 0; i < count; i++)
+                {
+                    Console.Write("*");
+                }
+
+                count--;
+                Console.WriteLine();
+            }
+            while (count > 0);
+        }
+    }
+}
