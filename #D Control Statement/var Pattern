@@ -1,0 +1,19 @@
+using System;
+
+namespace var_Pattern
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            // 모든 과목이 60점이 넘고, 평균이 60점 이상인 경우에만 Pass
+            var IsPassed = (int[] scores) => scores.Sum() / scores.Length is var average && Array.TrueForAll(scores, (score) => score >= 60) && average >= 60;
+
+            int[] scores1 = { 90, 80, 60, 80, 70, };
+            Console.WriteLine($"{string.Join(",", scores1)}: Pass:{IsPassed(scores1)}");
+
+            int[] scores2 = { 90, 80, 59, 80, 70, };
+            Console.WriteLine($"{string.Join(",", scores2)}: Pass:{IsPassed(scores2)}");
+        }
+    }
+}
