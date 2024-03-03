@@ -1,0 +1,22 @@
+using System;
+
+namespace Discard_Pattern
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            var GetCountryCode = (string nation) => nation switch
+            {
+                "KR" => 82,
+                "US" => 1,
+                "UK" => 44,
+                _ => throw new ArgumentException("Not supported Code") // 무시 패턴 매칭
+            };
+
+            Console.WriteLine(GetCountryCode("KR"));
+            Console.WriteLine(GetCountryCode("US"));
+            Console.WriteLine(GetCountryCode("UK"));
+        }
+    }
+}
