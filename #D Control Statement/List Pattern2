@@ -1,0 +1,15 @@
+using System;
+
+namespace List_Pattern2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            var match = (int[] array) => array is [int, > 10, ..];
+
+            Console.WriteLine(match(new int[] { 1, 100, 101, 102, 103, 104 }));
+            Console.WriteLine(match(new int[] { 1, 10, 999 }));
+        }
+    }
+}
